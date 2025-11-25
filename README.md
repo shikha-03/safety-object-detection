@@ -13,7 +13,7 @@ Detects 7 critical safety objects: OxygenTank, NitrogenTank, FirstAidBox, FireAl
 
 Trained and evaluated on >2100 labeled synthetic images
 
-Achieved mAP@0.5 of 0.76 (76%)—robust results
+Achieved mAP@0.5 of 0.76 (76%)—robust results (10 epochs)
 
 Includes interactive dashboard frontend hosted on Vercel
 
