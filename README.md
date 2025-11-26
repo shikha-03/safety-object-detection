@@ -29,6 +29,25 @@ NumPy, pandas, matplotlib
 Git LFS (if cloning large model weights)
 
 
+
+# Tech Stack :
+Python: Scripting, data preparation, and model training.
+
+Ultralytics YOLO: AI framework for object detection.
+
+Anaconda: Manages environments and dependencies.
+FalconEditor: For simulated dataset creation.
+
+NumPy, Pandas: Data handling.
+Matplotlib: Visualizations and graphs.
+
+Custom Frontend (React.js / Next.js / HTML+JS): user interface for demo and results display.
+
+Command Prompt: All orchestration and workflow.
+
+
+
+
 # Training
  Run training for N epochs (adjust yaml/weights as needed)
 yolo train model=yolov8s.pt data=yolo_params.yaml epochs=10
@@ -36,11 +55,12 @@ yolo train model=yolov8s.pt data=yolo_params.yaml epochs=10
 
 # Evaluation & Prediction
  Run validation
-yolo val model=runs/detect/train7/weights/best.pt data=yolo_params.yaml
+yolo val model=runs/detect/trainX/weights/best.pt data=yolo_params.yaml
 
  Predict/test on new images
 python predict.py --weights runs/detect/train7/weights/best.pt --img your_test_image.jpg
-See output graphs (confusion matrix, mAP, precision-recall) in runs/detect/train7/.
+See output graphs (confusion matrix, mAP, precision-recall) in runs/detect/trainX/.
+
 
 
 # Visualizations
@@ -49,7 +69,7 @@ View detection examples and evaluation metrics by opening these images.
 
 
 # Frontend (Dashboard)
-The interactive results dashboard is built with React/Next.js and deployed on Vercel: [your-demo-link]
+The interactive results dashboard is built with React/Next.js and deployed on Vercel: 
 
 To run locally, see the /frontend folder (if included) and follow its README.
 
@@ -75,5 +95,17 @@ Detailed results and failure case analysis in confusion matrix and visual output
 
 All trained weights, scripts, and outputs included for full reproducibility
 
+
+
+# Conclusion
+Successfully built an end-to-end solution for detecting safety equipment in simulated space station scenes.
+
+Demonstrated strong model accuracy, even under challenging conditions.
+
+Created a custom-coded frontend for real-time demo and visualization.
+
+Approach is scalable for future deployments in space, industry, and critical infrastructure.
+
+Lays groundwork for safer, smarter monitoring through AI-driven automation.
 
 
